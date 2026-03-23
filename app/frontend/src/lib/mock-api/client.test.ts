@@ -1,5 +1,4 @@
 import { fetchClient } from './client';
-import { handlers } from './handlers';
 
 // Mock environment variables
 process.env.NEXT_PUBLIC_USE_MOCKS = 'true';

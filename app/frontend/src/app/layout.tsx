@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { QueryProvider } from '@/lib/query-provider';
 import { Navbar } from '@/components/Navbar';
+import { ToastProvider } from '@/components/ToastProvider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -31,8 +32,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <QueryProvider>
-          <Navbar />
-          {children}
+          <ToastProvider>
+            <Navbar />
+            {children}
+          </ToastProvider>
         </QueryProvider>
       </body>
     </html>
