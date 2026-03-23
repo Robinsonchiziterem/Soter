@@ -54,6 +54,7 @@ export class ClaimsService {
         amount: createClaimDto.amount,
         recipientRef: createClaimDto.recipientRef,
         evidenceRef: createClaimDto.evidenceRef,
+        ipAddress: createClaimDto.ipAddress,
       },
       include: {
         campaign: true,

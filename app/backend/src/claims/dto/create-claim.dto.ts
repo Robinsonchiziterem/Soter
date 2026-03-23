@@ -42,4 +42,12 @@ export class CreateClaimDto {
   @IsOptional()
   @IsString()
   evidenceRef?: string;
+
+  @ApiPropertyOptional({
+    description: 'IP address of the claimant',
+    example: '192.168.1.1',
+  })
+  @IsOptional()
+  @IsString()
+  ipAddress?: string;
 }

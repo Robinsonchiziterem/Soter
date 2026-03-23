@@ -80,6 +80,8 @@ model Claim {
 
   recipientRef String
   evidenceRef  String?
+  ipAddress    String?
+  fraudRiskScore Float?
 }
 
 model AuditLog {

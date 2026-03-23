@@ -27,6 +27,7 @@ import { ApiKeyGuard } from './common/guards/api-key.guard';
 import { RolesGuard } from './auth/roles.guard';
 import { ObservabilityModule } from './observability/observability.module';
 import { ClaimsModule } from './claims/claims.module';
+import { FraudModule } from './fraud/fraud.module';
 import { LoggingInterceptor } from './interceptors/logging.interceptor';
 import { LoggerService } from './logger/logger.service';
 import { AllExceptionsFilter } from './common/filters/http-exception.filter';
@@ -69,6 +70,7 @@ import { AllExceptionsFilter } from './common/filters/http-exception.filter';
     CampaignsModule,
     ObservabilityModule,
     ClaimsModule,
+    FraudModule,
     NotificationsModule,
     JobsModule,
   ],
