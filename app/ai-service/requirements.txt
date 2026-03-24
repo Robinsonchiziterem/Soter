@@ -16,3 +16,8 @@ httpx==0.26.0
 
 # Logging enhancements (optional)
 python-json-logger==2.0.7
+
+# Machine Learning and Data processing for Fraud Detection
+scikit-learn
+pandas
+numpy
